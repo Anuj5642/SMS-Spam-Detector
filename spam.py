@@ -7,7 +7,7 @@ def load_model():
     classifier = pipeline("text-classification", model="mrm8488/bert-tiny-finetuned-sms-spam-detection")
     return classifier
 
-st.title("📩 Spam Message Detector (BERT Powered)")
+st.title("📩 Spam Message Detector ")
 
 classifier = load_model()
 
