@@ -1,4 +1,4 @@
-# 📩 Spam Message Detector (BERT Powered)
+# 📩 Spam Message Detector 
 
 This project uses a pretrained **BERT model** to classify messages as **Spam or Not Spam**.
 
