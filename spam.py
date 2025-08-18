@@ -5,7 +5,7 @@ import joblib
 model = joblib.load("spam_classifier.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
 
-st.title("📩 Spam Message Detector (Logistic Regression)")
+st.title("📩 Spam Message Detector")
 
 message = st.text_area("Enter a message to classify")
 
