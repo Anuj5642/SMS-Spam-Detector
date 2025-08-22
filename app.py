@@ -19,7 +19,9 @@ user_input = st.text_area("Message:", height=100)
 if st.button("Detect"):
     if user_input.strip():
         vec = vectorizer.transform([user_input])
-        prediction = model.predict(vec)[0]
+      proba = model.predict_proba([message])[0][1]  # probability of spam
+prediction = "Spam" if proba > 0.7 else "Ham"
+
         st.success(f"Prediction: **{prediction}**")
     else:
         st.warning("Please enter a message.")
