@@ -5,6 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
+model = LogisticRegression(class_weight='balanced', max_iter=1000)
 # Load dataset
 df = pd.read_csv("SMSSpamCollection", sep='\t', names=['label', 'message'])
 
