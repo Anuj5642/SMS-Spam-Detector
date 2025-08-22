@@ -4,11 +4,12 @@ import pickle
 st.set_page_config(page_title="📩 Spam Message Detector", layout="centered")
 
 # Load trained model + vectorizer
-with open("model/spam_model.pkl", "rb") as f:
+with open("spam_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("model/vectorizer.pkl", "rb") as f:
+with open("vectorizer.pkl", "rb") as f:
     vectorizer = pickle.load(f)
+
 
 st.title("📩 Spam Message Detector")
 st.write("Enter any message below to check if it is Spam or Ham.")
